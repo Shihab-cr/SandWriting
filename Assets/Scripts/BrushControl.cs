@@ -6,7 +6,7 @@ public class BrushControl : MonoBehaviour
     private Camera mainCamera;
     private Collider brushCollider;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    void Start() 
     {
         brushCollider = GetComponent<Collider>();
         mainCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();

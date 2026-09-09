@@ -6,12 +6,6 @@
       "source": "embedded",
       "dependencies": {}
     },
-    "com.jbooth.better-shaders": {
-      "version": "file:com.jbooth.better-shaders",
-      "depth": 0,
-      "source": "embedded",
-      "dependencies": {}
-    },
     "com.unity.2d.animation": {
       "version": "15.1.0",
       "depth": 0,
