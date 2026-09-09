@@ -60,6 +60,7 @@ public class BrushControl : MonoBehaviour
         Debug.DrawRay(ray.origin, ray.direction * 100f, Color.red, 1f);
         if(Physics.Raycast(ray,out RaycastHit hit, 1000, LayerMask.GetMask("Ground"))){
             transform.position = hit.point;
+            Debug.Log("Brush and ray difference: " + (hit.point - transform.position));
         }
 
 
