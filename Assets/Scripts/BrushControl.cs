@@ -123,7 +123,13 @@ public class BrushControl : MonoBehaviour
     }
 
 
-
+    public void ResetDrawingBoard()
+    {
+        if(brushTrail != null)
+        {
+            brushTrail.Clear();
+        }
+    }
     private IEnumerator clickSequence()
     {
         var emission = brushTrail.emission;

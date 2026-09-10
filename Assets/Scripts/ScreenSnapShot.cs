@@ -6,7 +6,7 @@ public class ScreenSnapShot : MonoBehaviour
     [SerializeField] private RenderTexture rt;
     private Texture2D snapShot;
     [SerializeField] private Renderer viewPlane;
-
+    
     
     void Start()
     {
