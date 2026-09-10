@@ -5025,7 +5025,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 56991887}
-  m_Enabled: 0
+  m_Enabled: 1
 --- !u!20 &56991890
 Camera:
   m_ObjectHideFlags: 0
@@ -11053,8 +11053,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ef95589ae3c7a6468e513838ec1f1a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BrushControl
-  brushTrail: {fileID: 21634861}
-  dustTrail: {fileID: 275713675}
+  brushTrail: {fileID: 0}
 --- !u!135 &1840827846
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -11083,7 +11082,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1840827844}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -11248,7 +11247,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1851263416}
-  m_Enabled: 0
+  m_Enabled: 1
 --- !u!20 &1851263419
 Camera:
   m_ObjectHideFlags: 0

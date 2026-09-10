@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: GroundMaterial
+  m_Name: viewPlaneMat
   m_Shader: {fileID: -6465566751694194690, guid: ae50915abb73b3141a96313e8aacf583, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -25,7 +25,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BaseMap:
-        m_Texture: {fileID: 8400000, guid: ac25c286642177f4eadb0a66164a1248, type: 2}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -51,10 +51,10 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     - _RotationalIteration: 8
-    - _Smoothness: 0.523
+    - _Smoothness: 0.407
     - _TessellationFactor: 16
     m_Colors:
-    - _GroundColor: {r: 0.9622642, g: 0.64525753, b: 0.16521892, a: 1}
+    - _GroundColor: {r: 0.9849057, g: 0.7102531, b: 0.2954716, a: 1}
     - _color: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
