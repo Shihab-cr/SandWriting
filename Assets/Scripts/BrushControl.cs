@@ -20,10 +20,20 @@ public class BrushControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(!EventSystem.current.IsPointerOverGameObject())
+
+        float mouseX = Mouse.current.position.ReadValue().x;
+        float mouseY = Mouse.current.position.ReadValue().y;
+        if (mouseX > mainCamera.pixelWidth || mouseX < 0 || mouseY > mainCamera.pixelHeight || mouseY < 0)
+        {
+            Debug.Log("Outside of bounds");
+            return;
+        }
+
+        if (!EventSystem.current.IsPointerOverGameObject())
         {
             if (Input.GetMouseButtonDown(0))
             {
+                Debug.Log("Inside of bounds");  
                 MoveBrush();
                 simpleClick();
 
@@ -47,7 +57,19 @@ public class BrushControl : MonoBehaviour
             Debug.LogError("Main Camera not found! Or MainCamera tag is missing.");
             return;
         }
-        
+
+
+
+        if (Display.RelativeMouseAt(Mouse.current.position.ReadValue()).z != 0)
+        {
+            Debug.Log("Outside of bounds");
+            return;
+        }
+        Debug.Log("Mouse Position: " + Display.RelativeMouseAt(Mouse.current.position.ReadValue()));
+
+       
+
+
         TurnOnBrushEffect();
 
 
