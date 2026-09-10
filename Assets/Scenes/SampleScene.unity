@@ -10299,7 +10299,7 @@ GameObject:
   - component: {fileID: 963509700}
   - component: {fileID: 963509699}
   - component: {fileID: 963509698}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: viewPlane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
