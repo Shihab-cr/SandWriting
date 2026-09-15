@@ -1,8 +1,8 @@
 using NUnit.Framework;
 using System.Collections.Generic;
-using UnityEditor.Rendering;
+
 using UnityEngine;
-using static UnityEngine.Rendering.DebugUI.Table;
+
 
 public class GridConversionLogic : MonoBehaviour
 {
