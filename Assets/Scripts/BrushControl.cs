@@ -25,7 +25,7 @@ public class BrushControl : MonoBehaviour
         float mouseY = Mouse.current.position.ReadValue().y;
         if (mouseX > mainCamera.pixelWidth || mouseX < 0 || mouseY > mainCamera.pixelHeight || mouseY < 0)
         {
-            Debug.Log("Outside of bounds");
+            //Debug.Log("Outside of bounds");
             return;
         }
 
@@ -33,7 +33,7 @@ public class BrushControl : MonoBehaviour
         {
             if (Input.GetMouseButtonDown(0))
             {
-                Debug.Log("Inside of bounds");  
+               // Debug.Log("Inside of bounds");  
                 MoveBrush();
                 simpleClick();
 
@@ -54,7 +54,7 @@ public class BrushControl : MonoBehaviour
     {
         if(mainCamera == null)
         {
-            Debug.LogError("Main Camera not found! Or MainCamera tag is missing.");
+            //Debug.LogError("Main Camera not found! Or MainCamera tag is missing.");
             return;
         }
 
@@ -62,10 +62,10 @@ public class BrushControl : MonoBehaviour
 
         if (Display.RelativeMouseAt(Mouse.current.position.ReadValue()).z != 0)
         {
-            Debug.Log("Outside of bounds");
+            //Debug.Log("Outside of bounds");
             return;
         }
-        Debug.Log("Mouse Position: " + Display.RelativeMouseAt(Mouse.current.position.ReadValue()));
+        //Debug.Log("Mouse Position: " + Display.RelativeMouseAt(Mouse.current.position.ReadValue()));
 
        
 
